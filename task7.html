@@ -1,0 +1,29 @@
+<!--  Disable/enable the form submit button.Disable the submit button until the visitor has clicked a check box. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task 7</title>
+        <script src="jquery.js"></script>
+    </head>
+    <body>
+        <h1>Task 7</h1>
+        <form>
+            <label>Name:</label>
+            <input type="text" name="name" value="" />
+            </br></br>
+            <label>Password:</label>
+            <input type="password" name="password" />
+            </br></br>
+            <input type="submit" name="submit" value="Submit"/>
+            <input type="checkbox"/> 
+        </form>
+        <script>
+            $(document).ready(function(){
+                $('input[type="submit"]').attr('disabled','disabled');
+                $('input[type="checkbox"]').click(function() {
+                     $(':input[type="submit"]').prop('disabled', false);
+                });
+            });
+        </script>
+    </body>
+</html>

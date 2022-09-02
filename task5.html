@@ -2,14 +2,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>task 1</title>
+        <title>task 5</title>
         <script src="jquery.js"></script>
     </head>
     <body>
         <h1>Task 5</h1>
+        <div style="border:1px solid black;width:100px;height:150px;overflow:auto">
+            <p id="top">This is some text.</p>
+            This is some text.
+            This is some text.
+            This is some text.
+            This is some text.
+            This is some text.
+            This is some text.
+            This is some text.
+            This is some text.
+        </div>
+        <br>
+        <button>scroll to top</button>
         <script>
-            $(document).ready(function(){
-                alert('task 1');
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $("div").animate({ scrollTop: 0 }, "slow");
+                });
             });
         </script>
     </body>
