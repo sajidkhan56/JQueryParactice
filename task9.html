@@ -1,0 +1,20 @@
+<!-- Blink text using jQuery -->
+<!DOCTYPE>
+<html>
+    <head>
+        <title>task 9</title>
+        <script src="jquery.js"></script>
+    </head>
+    <body>
+        <h1 class="blink">task 9 </h1>
+        <script>
+            $(document).ready(function () {
+                setInterval(function(){
+                $(".blink").fadeOut(function () {
+                    $(this).fadeIn();
+                });
+                } ,100)
+            });
+        </script>
+    </body>
+</html>

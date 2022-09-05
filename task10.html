@@ -1,0 +1,64 @@
+<!-- Create a Zebra Stripes table effect -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>task 10</title>
+        <script src="jquery.js"></script>
+        <style>
+            .table_style {
+                width: 500px;
+                margin: 0px auto;
+                }
+                table{
+                width: 100%;
+                border-collapse: collapse;
+                }
+                table tr td{
+                width: 50%;
+                border: 1px solid 
+                    #ff751a;
+                padding: 5px;
+                }
+                table tr th{
+                border: 1px solid 
+                     #79ff4d;
+                padding: 5px;
+                }
+                .zebra{
+                background-color:  
+                     #ff0066;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Task 10</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Maths</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Physics</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Chemistry</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+        <script>
+            $(document).ready(function(){
+                $("tr:odd").addClass("zebra");
+            });
+        </script>
+    </body>
+</html>
